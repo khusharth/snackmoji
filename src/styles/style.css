@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-light: #93f9b9;
+    --primary-dark: #1d976c;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(
+        120deg,
+        var(--primary-light),
+        var(--primary-dark)
+    );
+    min-height: calc(100vh - 5rem);
+}
+
+.emoji__container {
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.emoji__input {
+    margin: 4rem 0;
+    width: 80%;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.emoji__input:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.emoji__meaning {
+    margin-bottom: 4rem;
+}
+
+.emoji__list {
+    padding: 2rem;
+    list-style: none;
+}
+
+.emoji__item {
+    font-size: 3.5rem;
+    display: inline-block;
+    margin: 1.5rem;
+    cursor: pointer;
+}
